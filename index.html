@@ -130,8 +130,8 @@ body {
                 if(text.lenght>20){return "</br>I'm afraid this name is a little bit too long :/ can you give me another one ?"}
                 else{
                     Cookies.set("nameCookie",text);
-                    var nm = Cookies.get("nameCookie");
-                    return "</br>Nice to meet you "+nm+" !</br>You can enter by typing '/Enter'.";
+                    name = Cookies.get("nameCookie");
+                    return "</br>Nice to meet you "+name+" !</br>You can enter by typing '/Enter'.";
                 }
 
             }
