@@ -177,7 +177,8 @@ body {
             }
             else if(text=="/enter"||text=="/Enter")
             {
-                showPage();
+
+                var myVar = setTimeout(showPage, 500);
                 return ""; //enter the portfolio
             }
             else{
