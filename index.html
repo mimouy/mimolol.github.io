@@ -4,14 +4,6 @@
 
 <div id="dialog">
 
-<h1>Welcome to my portfolio</h1>
-<h1>I'm sorry but I don't remember you...</h1>
-<h1>I'm sorry I have to ask this but what's your name ?</h1>
-<form id="nameForm">
-  <input type="text" id="name" placeholder="Name">
-  <input type="submit">
-</form>
-
 </div>
 
 
@@ -20,8 +12,24 @@
 
 <script>
   $(function() {
-    
+    //Get des cookies
+    var name = Cookies.get("name");
 
+  
+    if(name!=undefined&&name!=null&&name!=""){// Si lle nom est déjà renseigné
+    var nm = Cookies.get('nameCookie')
+    var txt = "<h1>Hello "+nm+",</h1><h1>Welcome to my Portfolio !</h1>";
+    setText(txt);
+    }else{//Si le nom n'est pas encore renseigné
+    var startDialog1 = "<h1>Welcome to my portfolio</h1><h1>I'm sorry but I don't remember you...</h1><h1>I'm sorry I have to ask this but what's your name ?</h1><form id='nameForm'>  <input type='text' id='name' placeholder='Name'>  <input type='submit'></form>"
+    setText(startDialog1);
+    }
+
+
+
+
+
+    //Set name
     $( "#nameForm" ).submit(function( event ) {
     event.preventDefault();
 
@@ -29,18 +37,20 @@
     if(name.length>0){
     Cookies.set('nameCookie',name);
     var nm = Cookies.get('nameCookie')
-    alert(nm)
-    $("#dialog").html("<h1>Hello "+nm+",</h1><h1>Welcome to my Portfolio !</h1>")
+    var txt = "<h1>Hello "+nm+",</h1><h1>Welcome to my Portfolio !</h1>";
+    setText(txt);
     }
+
+//Changer le texte du dialogue
+function setText(text){
+  $("#dialog").html(text);
+}
 
 });
 
 
 });
 </script>
-
-
-
 
 </body>
 </html>
