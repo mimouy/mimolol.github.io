@@ -16,7 +16,7 @@
     var name = Cookies.get("name");
 
   
-    if(name!=undefined&&name!=null&&name!=""){// Si lle nom est déjà renseigné
+    if(name!=undefined&&name!=null&&name!=""){// Si le nom est déjà renseigné
     var nm = Cookies.get('nameCookie')
     var txt = "<h1>Hello "+nm+",</h1><h1>Welcome to my Portfolio !</h1>";
     setText(txt);
@@ -39,14 +39,12 @@
     var nm = Cookies.get('nameCookie')
     var txt = "<h1>Hello "+nm+",</h1><h1>Welcome to my Portfolio !</h1>";
     setText(txt);
-    }
+    }});
 
 //Changer le texte du dialogue
 function setText(text){
   $("#dialog").html(text);
 }
-
-});
 
 
 });
