@@ -2,6 +2,8 @@
 <html>
 <body>
 
+<button id="getcookie">Get cookie</button>
+
 <div id="dialog">
 
 </div>
@@ -13,7 +15,8 @@
 <script>
   $(function() {
     //Get des cookies
-    var name = Cookies.get("name");
+    var name = Cookies.get("nameCookie");
+
 
   
     if(name!=undefined&&name!=null&&name!=""){// Si le nom est déjà renseigné
@@ -46,6 +49,10 @@ function setText(text){
   $("#dialog").html(text);
 }
 
+
+$("#getcookie").click(function(){
+  alert(Cookies.get('nameCookie',name));
+})
 
 });
 </script>
