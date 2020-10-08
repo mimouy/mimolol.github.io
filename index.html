@@ -78,7 +78,7 @@ body {
   to{ bottom:0; opacity:1 }
 }
 
-#myDiv {
+#content {
   display: none;
   text-align: center;
 }
@@ -113,8 +113,12 @@ body {
 </div>
 
 
-<div  id="myDiv" class="animate-bottom">
+<div  id="content" class="animate-bottom">
   <h1>Page in construction</h1>
+
+
+
+  
 </div>
 
 
@@ -136,7 +140,7 @@ body {
           $("#username").html(name);
           //addLine("<p>> Type help to see a list of commands</p>");
           addLine("<p>Welcome to my portfolio !</p>");
-          addLine("<p>Oh it's "+name+" ! How have you been ?</p>");
+          addLine("<p>Oh it's "+name+" ! (☞ﾟヮﾟ)☞ How have you been ?</p>");
           addLine("<p>You can enter by typing 'Enter'</p>")
 
 
@@ -178,8 +182,8 @@ body {
             else if(text=="enter"||text=="Enter")
             {
 
-                var myVar = setTimeout(showPage, 500);
-                return ""; //enter the portfolio
+                var myVar = setTimeout(showPage, 1250);
+                return "Welcome ! :D"; //enter the portfolio
             }
             else{
                 return "</br>This function is not recognized.";
