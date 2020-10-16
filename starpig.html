@@ -120,7 +120,7 @@
               </br>
                 <h3>I made this project for my Game Dev class in 2020.</h3>
                </br>
-                <h5>It was the first videogame I really finish, even if it's a pretty short one.</h5>
+                <h5>It was the first videogame I really finished, even if it's a pretty short one.</h5>
              
                 <h5>So it's a "Starfox like" space/rail shooter, that has Porco Rosso as theme.
                 </h5>
@@ -128,7 +128,7 @@
                 <h5>It took me about a month to develop it from scratch.
                 </h5>
               </br>
-              <h5>I used Unity and it was the first time I use it to create a game, I am much more familiar with Unreal Engine 4.
+              <h5>I used Unity and it was the first time I used it to create a game, I am much more familiar with Unreal Engine 4.
               </h5>
               </div>
             </div>
@@ -142,7 +142,7 @@
         <div  class="col-md-9">
 <!--class="row"  4 par ligne--> 
 <!--id="lightgallery"  Click to open gallery-->
-          <h2 class="text-center">A brief presentation</h2>
+          <h1 class="text-center">A brief presentation</h1>
         </br>
         <h3 style="margin-left: 20px;">Concept</h3>
           <div style="margin-bottom: 50px;" data-aos="fade">
@@ -156,19 +156,41 @@
             He looses when he looses all his HP's.</p>
           </div>
 
+          <h3 style="margin-left: 20px;">Health</h3>
+          <div style="margin-bottom: 100px;">
+          <p>A brief feature I added to the health bar is the picture of Marco (player's character).</br>
+            This image changes depending on player's HP's (Yeah like in 1994's Aladdin).</p>
+            <div  style="display: grid; grid-template-columns: 33% 33% 33%;" data-aos="fade">
+              <div  style="">
+                <img src="/images/starpig/IconHappyMarco.png" style="max-width: 100%;">
+                <h5 class="text-center"  >HP > 70%</h5>
+              </div>
+              <div  style="">
+                <img src="/images/starpig/IconNormalMarco.png" style="max-width: 100%;">
+                <h5 class="text-center"  >70% > HP > 30%</h5>
+              </div>
+              <div  style="">
+                <img src="/images/starpig/IconHurtMarco.png" style="max-width: 100%;">
+                <h5 class="text-center"  >HP<30%</h5>
+              </div>
+
+            </div>
+
+            </div>
 
 
-          <h3 style="margin-left: 20px;">Bonuses</h3>
+
+          <h3 style="margin-left: 20px;">Bonus</h3>
           <div  style="margin-bottom: 100px;" data-aos="fade">
             <p>
               The player can get <b>bonuses</b> by taking them directly, like the <b style="color: blue; font-size: larger;">X2</b> bonus that gives him a double machinegun for a few seconds, or
                the <b>heart</b> that gives him HP's.
             </p>
-            <img src="images/starpig/heart.PNG">
+            <img src="images/starpig/heart.PNG" style="max-height: 300px;">
           </div>
 
           <h3 style="margin-left: 20px;">Bonus box</h3>
-          <div  style="display: grid; grid-template-columns: 30% 70%;;margin-bottom: 100px;" data-aos="fade">
+          <div  style="display: grid; grid-template-columns: 30% 70%;margin-bottom: 100px;" data-aos="fade">
             <img src="images/starpig/box.PNG" class="myImg1">
             <p>
               He can also have a random bonus by detroying a <b>bonus box</b>.
@@ -206,8 +228,31 @@
            </p>
 
            <h4 style="margin-left: 5px;">Shooting</h4>
+           <p>The shooting system is pretty simple, it doesn't use any <b>physics</b>, only <b>code</b>.</br>
+              Enemies (like the player) shoot a projectile that damages the opponent in contact.</p>
+           <p>The <b>damage</b> scale depends on the enemy itself and the <b>difficulty</b> chosen by the player.</br>
+              Enemies can shoot <b>straight forward</b> (or backward to be exact) or aim the <b>player</b>.</p>
+           <div style="display: grid; grid-template-columns: 50% 50%;margin-bottom: 50px;">
+            <div>
+              <p>Straight shot :</p>
+            <img src="/images/starpig/forward.PNG" style="width:450px;height: 200px;">
+          </div>
+            <div>
+              <p>Aim shot :</p>
+            <img src="/images/starpig/aim.PNG" style="width:450px;height: 200px;">
+          </div>
+           </div>
+
            <h4 style="margin-left: 5px;">Movement</h4>
-           <h4 style="margin-left: 5px;">Types</h4>
+           <div style="margin-bottom: 50px;">
+             <p>Enemies have different <b>behaviors.</b></p>
+             <li>Static : Doesn't move at all.</li>
+             <li>Left Right : Moves continuously from left to right.</li>
+             <li>Follow player : Follows the player on X and Y axes.</li>
+             <li>Rafale : Follows the player while shooting, stops while he reloads.</li>
+
+           </div>
+           <h4 style="margin-left: 5px;">Enemies Types</h4>
 
 
            <h5>Following plane</h5>

@@ -1269,3 +1269,101 @@ a {
 p b {
   color: red;
 }
+
+
+
+
+
+body {
+    
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  }
+
+.portail{
+ background-color: #343a40;
+}
+
+  
+  .console {
+
+  font-family: 'Fira Mono';
+  width: 700px;
+  height: 450px;
+  box-sizing: border-box;
+  margin: auto;
+  margin-top: 10%;
+  
+  font-size: 17px;
+  }
+  
+  .console header {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-color: #555;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  color: #DDD;
+  }
+  
+  .console .consolebody {
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  box-sizing: border-box;
+  padding: 20px;
+  height: calc(100% - 40px);
+  overflow-y: scroll;
+  background-color: #000;
+  color: #63de00;
+  }
+  
+  .console .consolebody p {
+  line-height: 1.5rem;
+  }
+  
+  #Input {
+    background-color: #000;
+    color: white;
+    border:none;
+    outline: none;
+    font-family: 'Fira Mono';
+    font-size: 17px;
+  }
+
+
+  .BG{
+  position:absolute;
+  background-color:grey;
+  height:100%;
+  width:100%;
+}
+  
+  
+  
+  
+  /* Add animation to "page content" */
+  .animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+  }
+  
+  @-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+  }
+  
+  @keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+  }
+  
+  #content {
+  display: none;
+  text-align: center;
+  }
+  
