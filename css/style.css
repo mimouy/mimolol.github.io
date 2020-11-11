@@ -1269,7 +1269,9 @@ a {
 p b {
   color: red;
 }
-
+h1 b,h2 b,h3 b,h4 b,h5 b,h6 b {
+  color: red;
+}
 
 
 
@@ -1367,3 +1369,23 @@ body {
   text-align: center;
   }
   
+  .left20{
+    margin-left: 20px;
+  }
+
+  .flexRow{
+    display: flex;
+    flex-direction: row;
+  }
+  .pad10{
+    padding: 10px;
+  }
+  .half{
+    width: 50%;
+  }
+  .fullW{
+    max-width: 100%;
+  }
+  .maxHalf{
+    max-width: 50%;
+  }
