@@ -1372,7 +1372,9 @@ body {
   .left20{
     margin-left: 20px;
   }
-
+  .left5{
+    margin-left: 5px;
+  }
   .flexRow{
     display: flex;
     flex-direction: row;
@@ -1396,7 +1398,15 @@ body {
   .w30{
     width: 30%;
   }
-
+  .parag{
+    margin-bottom: 100px;
+  }
+  .mparag{
+    margin-bottom: 50px;
+  }
+  .description{
+    margin-top: 50px;
+  }
 
   @media only screen and (max-width: 800px) { 
     .half{
