@@ -1380,12 +1380,33 @@ body {
   .pad10{
     padding: 10px;
   }
+  .mar10{
+    margin: 10px;
+  }
   .half{
     width: 50%;
   }
   .fullW{
     max-width: 100%;
+    margin: 10px;
   }
   .maxHalf{
     max-width: 50%;
   }
+  .w30{
+    width: 30%;
+  }
+
+
+  @media only screen and (max-width: 800px) { 
+    .half{
+      width: 100%;
+    }
+    .flexRow{
+      display: block;
+    }
+    .w30{
+      width: 100%;
+    }
+
+  } 
