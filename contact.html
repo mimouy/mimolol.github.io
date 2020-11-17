@@ -33,6 +33,16 @@
   a:hover{
     color: darkred;
   }
+  button{
+    background-color: red;
+  }
+  button:hover{
+    background-color: darkred;
+  }
+  button:active{
+    background-color: red;
+    transform: scale(0.95);
+  }
 </style>
 
 </head>
@@ -187,7 +197,8 @@
               </br>
                 <p class="mb-0 font-weight-bold text-white">Email Address</p>
   
-                <p class="mb-0"><a href="mailto:bouyakhlefmohamed@gmail.com">bouyakhlefmohamed@gmail.com</a></p>
+                <p class="mb-0" id="email"><a href="mailto:bouyakhlefmohamed@gmail.com">bouyakhlefmohamed@gmail.com</a></p>
+                <button class="btn btn-red" onclick="copyEmail()">Copy</button>
   
               </div>
   
@@ -217,7 +228,16 @@
 
 
 
-
+<script>
+  function copyEmail() {
+  var range = document.createRange();
+    var selection = window.getSelection();
+    range.selectNodeContents(document.getElementById('email'));
+    selection.removeAllRanges();
+    selection.addRange(range);
+  document.execCommand("copy");
+  }
+</script>
 
 
 
