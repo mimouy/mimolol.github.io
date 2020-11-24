@@ -388,6 +388,9 @@
           wavesurfer.play();
           document.getElementById("playpause").innerHTML = "<span class='icon-pause musicbtn'></span>";
         });
+        wavesurfer.on('finish', function () {
+          document.getElementById("playpause").innerHTML = "<span class='icon-replay musicbtn'></span>";
+        });
 
         
         function playM(){
