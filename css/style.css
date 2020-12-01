@@ -1345,6 +1345,7 @@ body {
   position:absolute;
   height:90%;
   width:100%;
+  background-color: rgb(77, 77, 77);
 }
   
   
@@ -1569,9 +1570,6 @@ body::-webkit-scrollbar-thumb {
       margin-right: 10px
     }
 
-    .BG{
-      background-color:#343a40;
-    }
     .console{
       width: 95%;
     }
