@@ -1548,9 +1548,7 @@ body::-webkit-scrollbar-thumb {
 
 
 .portail{
-  background-color: #343a40;
   background:  linear-gradient(black, rgb(168, 168, 168), black);
- 
  }
 
   @media only screen and (max-width: 800px) { 
