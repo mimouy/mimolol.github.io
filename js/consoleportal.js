@@ -80,8 +80,10 @@
             function ManageInput(text){
                 
                 if((name==undefined||name==null||name=="")&&(!text.includes("/setname "))&&(!text.includes("/setlang "))&&text!="cls"&&text!="clear")
-                { 
-                    if(text.lenght>20){return "I'm afraid this name is a little bit too long :/ can you give me another one ?"}
+                {
+                    if(text.toString().length>20){
+                        return "<span class='"+managelang("eng")+"'>I'm afraid this name is a little bit too long :/ can you give me another one ?</span>"+"<span class='"+managelang("fr")+"'>Je crains que ce prénom ne soit un peu trop long pour mon cerveau de poisson rouge, pourriez vous m'en donner un autre ?</span>"
+                    }
                     else{
                         Cookies.set("nameCookie",text,{ expires : 30 });
                         name = Cookies.get("nameCookie");
@@ -95,7 +97,7 @@
                 {
                     Cookies.set("inside",true, { expires : 1 });
                     var myVar = setTimeout(showPage, 1250);
-                    return "Welcome ! :D"; //enter the portfolio
+                    return "<span class='"+managelang("eng")+"'>Welcome !</span>"+"<span class='"+managelang("fr")+"'>Bienvenue !</span>"; //enter the portfolio
                 }else if(text.includes("/setname "))
                 {
 
@@ -141,7 +143,7 @@
                     return "'Enter' to enter.</br>'Help'  to have help with commands.</br>'/name  YOUR_NAME' to change you username"
                 }*/
                 else{
-                    return "This function is not recognized.";
+                    return "<span class='"+managelang("eng")+"'>This command is not recognized.</span>"+"<span class='"+managelang("fr")+"'>Commande non reconnue.</span>"
                 }
             }
     

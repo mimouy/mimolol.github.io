@@ -1,11 +1,11 @@
 let loaded = false;
+document.getElementById("playpause").classList.add("none");
 var wavesurfer = WaveSurfer.create({
   container: '#waveform',
   waveColor: 'red',
   progressColor: 'black',
   cursorColor: "white",
 });
-wavesurfer.load('audio/vangelis-conquest-of-paradise.mp3');
 let volume = getCookiebyName("volume");
 if (!volume) {
   createNewCookie("volume",1,200);
@@ -19,6 +19,9 @@ setVolume(volume);
 });
 wavesurfer.on('finish', function () {
   document.getElementById("playpause").innerHTML = "<span class='icon-replay musicbtn'></span>";
+});
+wavesurfer.on('ready', function () {
+  document.getElementById("playpause").classList.remove("none");
 });
 
 
