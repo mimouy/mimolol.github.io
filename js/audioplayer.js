@@ -15,10 +15,10 @@ setVolume(volume);
 
   wavesurfer.on('seek', function () {
   wavesurfer.play();
-  document.getElementById("playpause").innerHTML = "<span class='icon-pause musicbtn'></span>";
+  document.getElementById("playpause").innerHTML = "<span class='icon-pause musicbtn playpausebtn'></span>";
 });
 wavesurfer.on('finish', function () {
-  document.getElementById("playpause").innerHTML = "<span class='icon-replay musicbtn'></span>";
+  document.getElementById("playpause").innerHTML = "<span class='icon-replay musicbtn playpausebtn'></span>";
 });
 wavesurfer.on('ready', function () {
   document.getElementById("playpause").classList.remove("none");
@@ -27,11 +27,13 @@ wavesurfer.on('ready', function () {
 
 function playM(){
   if(!wavesurfer.isPlaying()){
-    wavesurfer.play();    
-    document.getElementById("playpause").innerHTML = "<span class='icon-pause musicbtn'></span>";
+    wavesurfer.play();
+    document.getElementById("playpause").innerHTML = "<span class='icon-pause musicbtn playpausebtn'></span>";
+    document.getElementById("showplayericon").classList.add("bouncing");
   }else{
     wavesurfer.pause();
-    document.getElementById("playpause").innerHTML = "<span class='icon-play_arrow musicbtn'></span>";
+    document.getElementById("playpause").innerHTML = "<span class='icon-play_arrow musicbtn playpausebtn'></span>";
+    document.getElementById("showplayericon").classList.remove("bouncing");
   }
 }
 

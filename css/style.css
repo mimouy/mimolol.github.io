@@ -1443,9 +1443,17 @@ body {
     margin: 2px;
     background-color: black;
   }
+
   .musicbtn:hover{
     color: white;
     cursor: pointer;
+  }
+  .closeplayerbtn, .playpausebtn{
+    padding: 0;
+    font-size: 25px;
+  }
+  .closeplayerbtn{
+    margin-top: -5px !important;
   }
 
   .fromright{
@@ -1489,7 +1497,7 @@ body {
   background: #555;
   border-radius: 15px;
   margin-left:20px;
-  margin-top: 8px;
+  margin-top: 10px;
 }
 #volume .ui-slider-range-min {
   height: 5px;
@@ -1546,6 +1554,7 @@ body {
   position: fixed;
 }
 
+
 body::-webkit-scrollbar-track {
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
@@ -1564,6 +1573,26 @@ body::-webkit-scrollbar-thumb {
 }
 
 
+@keyframes sizechange {
+  0% {
+     transform: scale(1.00);
+  }
+
+
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+.bouncing {
+  -webkit-animation: sizechange 2s infinite;
+  animation: sizechange 1s infinite;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+
+}
+
+
 
   @media only screen and (max-width: 800px) { 
     .half{
@@ -1579,13 +1608,21 @@ body::-webkit-scrollbar-thumb {
     body{
       overflow-x: hidden !important;
     }
+    body::-webkit-scrollbar {
+      width: 15px;
+      background-color:black;
+    }
 
     .audioplayer{
-      margin-right: 10px
+      margin-right: 20px
     }
 
     .console{
       width: 95%;
+    }
+
+    .musicbtn{
+      font-size: x-large;
     }
     
   } 
