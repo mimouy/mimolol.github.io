@@ -1580,7 +1580,7 @@ body::-webkit-scrollbar-thumb {
 
 
   100% {
-    transform: scale(1.1);
+    transform: scale(1.3);
   }
 }
 
