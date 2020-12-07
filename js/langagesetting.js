@@ -3,7 +3,7 @@
   console.log("Langue = "+lang);
 
   if(!lang){
-    createCookie("lang","eng",30);
+    createCookie("lang","fr",30);
     lang = getCookie("lang");
   }
   setlang(lang);

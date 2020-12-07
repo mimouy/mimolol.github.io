@@ -2,7 +2,7 @@
 
             let lang = Cookies.get("lang");
             if(!lang){
-                Cookies.set("lang","eng",{ expires : 30 });
+                Cookies.set("lang","fr",{ expires : 30 });
                 lang = Cookies.get("lang");
               }
 
