@@ -1619,7 +1619,7 @@ body::-webkit-scrollbar-thumb {
 
 
 
-  @media only screen and (max-width: 800px) { 
+  @media only screen and (max-width: 800px) {  /*Mobile version*/
     .half{
       width: 100%;
     }
