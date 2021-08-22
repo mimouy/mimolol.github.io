@@ -1663,7 +1663,7 @@ body::-webkit-scrollbar-thumb {
       overflow-x: hidden !important;
     }
     body::-webkit-scrollbar {
-      width: 15px;
+      width: 5px;
       background-color:black;
     }
 

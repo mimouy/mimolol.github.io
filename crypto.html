@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en" translate="no">
+
+<head>
+  <title>Crypto - Express.js / Vue.js</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="google" content="notranslate">
+
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Roboto+Mono:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="fonts/icomoon/style.css">
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/magnific-popup.css">
+  <link rel="stylesheet" href="css/jquery-ui.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+  <link rel="stylesheet" href="css/lightgallery.min.css">
+
+  <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+
+  <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+
+  <link rel="stylesheet" href="css/swiper.css">
+
+  <link rel="stylesheet" href="css/aos.css">
+
+  <link rel="stylesheet" href="css/style.css">
+
+
+
+
+
+</head>
+
+<body id="body">
+
+
+
+
+
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
+
+
+  <div id="notframe">
+
+    <header class="site-navbar" role="banner">
+
+      <div class="container-fluid">
+        <div class="row align-items-center">
+
+          <div class="col-6 col-xl-2" data-aos="fade-down">
+            <h1 class="mb-0"><a href="/" class="text-white h2 mb-0">Mimolol</a></h1>
+          </div>
+          <div class="col-10 col-md-8 d-none d-xl-block" data-aos="fade-down">
+            <nav class="site-navigation position-relative text-right text-lg-center" role="navigation">
+
+              <ul class="site-menu js-clone-nav mx-auto d-none d-lg-block">
+                <li><a class="gotohome" href="/">Home</a></li>
+                <li><a class="gotocontact" href="contact">Contact</a></li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="col-6 col-xl-2 text-right" data-aos="fade-down">
+            <div class="d-none d-xl-inline-block">
+              <ul class="site-menu js-clone-nav ml-auto list-unstyled d-flex text-right mb-0" data-class="social">
+                <li>
+                  <a title="Change langage" Maction="switchlang" class="pl-0 pr-3 cursor"><span
+                      class="icon-language js-menu-close"></span></a>
+                </li>
+                <li>
+                  <a target="_blank" href="https://github.com/mimolol" class="pl-0 pr-3"><span
+                      class="icon-github"></span></a>
+                </li>
+                <li>
+                  <a target="_blank" href="https://www.linkedin.com/in/mohamed-m-1b7b981a9/" class="pl-0 pr-3"><span
+                      class="icon-linkedin"></span></a>
+                </li>
+                <li>
+                  <a target="_blank" href="/CV Bouyakhlef Mohamed.pdf" class="pl-0 pr-3"><span>CV</span></a>
+                </li>
+                <li>
+                  <a target="_blank" href="mailto:bouyakhlefmohamed@gmail.com" class="pl-0 pr-3"><span
+                      class="icon-mail_outline"></span></a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#"
+                class="site-menu-toggle js-menu-toggle text-white"><span class="icon-menu h3"></span></a></div>
+
+          </div>
+
+        </div>
+      </div>
+
+    </header>
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+
+    <iframe width="100%" frameBorder="0" id="iframeview" src="/crypto" title="PORTFOLIO"></iframe>
+
+    <script src="https://unpkg.com/wavesurfer.js"></script>
+    <script src="js/cookieSetting.js"></script>
+
+
+    <div id="audioplayer" class="audioplayer">
+
+      <div class="audioheader">
+        <i onclick="hideplayer()" class="icon-close closeplayerbtn musicbtn"></i>
+        <div class="fromright">Conquest Of Paradise - Vangelis</div>
+      </div>
+      <div id="waveform"></div>
+      <div class="audioheader">
+        <div id="playpause" onclick="playM()"><span class="icon-play_arrow musicbtn playpausebtn"></span></div>
+        <div class="vol">
+          <div id="volume"></div>
+        </div>
+      </div>
+      <div id="audioloader" class="audioloader">
+        <div class="lds-roller">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+    </div>
+    <div class="showplayerbtn" id="showplayer">
+      <i onclick="showplayer()" id="showplayericon" class="icon-music_note musicbtn"></i>
+
+    </div>
+
+
+    <script src="js/audioplayer.js"></script>
+    <script src="js/audioplayer-jquery.js"></script>
+
+
+
+  </div>
+
+  <div id="inframe">
+
+
+
+
+
+
+    <div class="animate-bottom">
+
+
+      <div class="site-wrap">
+
+        <div class="site-section" data-aos="fade">
+          <div class="container-fluid">
+
+            <div class="row justify-content-center">
+
+              <div class="col-md-7">
+                <div class="row mb-5">
+                  <div class="col-12 eng">
+                    <h2 class="site-section-heading text-center">Count of money</h2>
+                    <h3>I made this project for a web project at school.</h3>
+                    <h5>I did it in 3 weeks and I did with 3 classmates.</h5>
+                    </br>
+                    <h5>This is a crypto currency stocks application.</h5>
+                    <h5>In this app, we can lookup for crypto-currencies and see their values in numbers and graphs</h5>
+                    <h5>We can also read latest articles about crypto currency and subscribe to crypto online newspapers</h5>
+                    </br>
+                    <h5>Main used technologies are <b>NodeJs</b>, <b>Express.js</b> with <b>MongoDB</b> databse, <b>Vue.js</b> and
+                      <b>Docker</b> and <b>Azure</b> for deployment.
+                    </h5>
+                  </div>
+                  <div class="col-12 fr">
+                    <h2 class="site-section-heading text-center">Count of money</h2>
+                    <h3>J'ai réalisé ce projet pour un projet web à l'école.</h3>
+                    <h5>C'était un projet en groupe qui a duré 3 semaines
+                    </h5>
+                    </br>
+                    <h5>C'est une application web de stocks de crypto-monnaies.</h5>
+                    <h5>Dedans, on peut avoir les derniers cours des crypto-monnaies et leurs évolutions</h5>
+                    <h5>On peut aussi lire les derniers articles des revues en ligne qui parlent de crypto-monnaie et s'y abonner.</h5>
+                    </br>
+                    <h5>Les principales technologies utilisées sont <b>NodeJs</b>, <b>Express.js</b> avec <b>MongoDB</b>
+                      comme base de données, <b>Vue.js</b> pour le front et <b>Docker</b> et <b>Azure</b> pour le
+                      déploiement.</h5>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+
+
+            <div class="row justify-content-center description">
+              <div class="col-md-9">
+
+                <h1 class="text-center eng">A brief presentation of main features</h1>
+                <h1 class="text-center fr">Présentation</h1>
+                </br>
+                <h3 class="left20 eng">Application architecture</h3>
+                <h3 class="left20 fr">Architecture de l'application</h3>
+                <div class="parag" data-aos="fade">
+                  <p class="eng">
+                    </br>-The backend is an <b>Express.js REST API</b>.
+                    </br>-The frontend is a <b>Vue.js</b> application that communicated with the API, but is completely
+                    separated from it.
+                    </br>-Data is stored in a <b>MongoDB</b> database.
+                  </p>
+                  <p class="fr">
+                    </br>-Le backend est une <b>API REST</b> utilisant <b>Express.js</b>.
+                    </br>-Le frontend est une application <b>Vue.js</b> qui communique avec l'API mais qui en est
+                    séparée.
+                    </br>-Les données sont stockées dans une base de données <b>MongoDB</b>.
+                  </p>
+                </div>
+
+                <h3 class="left20 eng">Login and register</h3>
+                <h3 class="left20 fr">Connexion et inscription</h3>
+
+                <div class="parag" data-aos="fade">
+                  <div class="flexCol">
+                    <img src="images/crypto/loginpage.PNG" class="fullW">
+                    <div class="pad10 eng">
+                      <p>Users can login and signup from this form.</br></br>
+                        This sends a sign in / signup request to the API that accepts or rejects it.
+                        </br></br>When the user isn't authentified, all routes except Home and articles lead to this page, as only authentified
+                        users can access crypto stocks.
+                        </br></br>Of course the application uses password hash and other security features...
+                      </p>
+                      </br></br>
+                      <p>
+                        Users can always change their informations in the settings page.
+                        </br></br>They can also choose the crypto-currencies and keywords they are interested in so they always have an eye on their crypto values and better article suggestions.
+                      </p>
+                    </div>
+
+                    <div class="pad10 fr">
+                      <p>Les utilisateurs peuvent se connecter et s'inscrire depuis ce formulaire .</br></br>
+                        Il envoie une requete à l'API qui accepte ou pas la connexion / inscription.
+                        </br></br>Quand l'utilisateur n'est pas authentifié tous les routes sauf l'index et la page des articles mènent à cette page, car il
+                        faut se connecter pour avoir accès aux cours des cryptos.
+                        </br></br>L'application utilise des features de sécurité comme le hash etc...
+                      </p>
+                      </br></br>
+                      <p>
+                        Les utilisateurs peuvent ensuite changer leurs informations dans les paramêtres
+                        </br></br>Ils peuvent aussi choisir les crypto-monnaies ainsi que les mots clé qui les interessent afin d'avoir toujours un oeil sur les valeurs de leurs cryptos et de meilleures suggestions d'articles.
+                      </p>
+                    </div>
+                  </div>
+                  </br>
+                  <img src="images/crypto/usersettings.gif" class="fullW">
+                </div>
+
+                <h3 class="left20">Articles</h3>
+                <div class="pad10">
+                  <h4 class="left20 eng">Admin part</h4>
+                  <h4 class="left20 fr">Partie admin</h4>
+                  <div class="parag" data-aos="fade">
+                    <p class="eng">
+                      Admins can access an app settings page where they can choose the currencies that are visible to users or not, they can do the same to crypto magazines (RSS feeds in the picture), and create new ones and delete the existing.
+                    </p>
+                    <p class="fr">
+                      Les admins peuvent avoir accès à une page de paramêtres de l'application dans laquelle ils peuvent selectionner les crypto-monnaies visibles par les utilisateurs, ils peuvent en faire de même pour les revues (RSS feeds dans la photo), ainsi qu'en rajouter de nouvelles ou en supprimer.
+                    </p>
+                    <img src="images/crypto/appsetting.PNG" class="fullW">
+                    <p class="eng">These are the journals that provide the different articles, the application retrieves them from RSS feeds registered by the admins and stores them in the database, it updates them every hour.</p>
+                    <p class="fr">Ce sont ces revues qui fournissent les différents articles, l'application les récupère depuis des flux RSS enregistrés par les admins et les stock dans la base de données, elle les met à jour toutes les heures.</p>
+                    
+                    
+                    <p class="eng">To do so, admins have to do the RSS feed mapping, because all RSS feeds are different, so I created a special tool that makes mapping very easy, fast and above all avoids making mistakes.</p>
+                    <p class="fr">Pour faire cela, les admins doivent faire le mappage des flux RSS qu'ils ajoutent, parce que tous les flux RSS sont différents,  j'ai donc créé un outil spécial qui rend le mapping très facile, rapide et surtout qui évite de faire des erreurs.</p>
+                    <h5 class="left20 eng">RSS Mapping tool</h4>
+                    <h5 class="left20 fr">Outil de mappage RSS</h4>
+                    <img src="images/crypto/modifyfeed.gif" class="fullW">
+                  </div>
+                  
+                  
+                  </br>
+                  <div class="flexRow parag" data-aos="fade">
+                    <div class="pad10 half eng">
+                      <p>Articles are then accessible in this page :
+                      </p>
+
+                      <p>
+                        - Latest : Shows latest articles with a "see more" button in the bottom of the page.
+                      </p>
+                      <p>
+                        - Keywords : Shows articles with user's saved keywords.
+                      </p>
+                      <p>
+                        - Search : Searches for all articles that contain the keywords written by the user.
+                      </p>
+                      <br>
+                      <p>The user can click on an article to open it.
+                      </p>
+                    </div>
+                    <div class="pad10 half fr">
+                      <p>Les articles sont ensuite disponibles sur cette page :</p>
+
+                      <p>
+                        - Latest : Liste les derniers articles avec un bouton "voir plus" en bas de page pour afficher la suite.
+                      </p>
+                      <p>
+                        - Keywords : Montre tous les articles contenant les mots clé enregistrés par l'utilisateur.
+                      </p>
+                      <p>
+                        - Search : Cherche dans les articles.
+                      </p>
+                      <br>
+                      <p>L'utilisateur peut cliquer sur un article pour l'afficher.
+                      </p>
+                    </div>
+                    <img src="images/crypto/articles.gif" class="half">
+                  </div>
+                  <p class="eng">This opens it in a page like this :
+                  </p>
+                  <p class="fr">Cela l'ouvre dans une page comme celle-ci
+                    </p>
+                  <img src="images/crypto/articledetail.gif" class="fullW">
+                </div>
+
+
+                <h3 class="left20 eng">Currencies</h3>
+                <h3 class="left20 fr">Crypto-monnaies</h3>
+                <div class="parag" data-aos="fade">
+                  <p class="eng">
+                    Here's the crypto-currencies page.
+                    </br> It lists all active (selected by the admin) currencies
+                    </br> In the "my currencies" onglet the user can access his favorite currencies.
+                    </br> It also has a search bar.
+                    </br> The user can also access a currency's details by clicking it.
+              </p>
+                  <p class="fr">
+                    Voici la page des crypto-monnaies.
+                    </br> Elle liste toutes les crypto-monnaies actives (par l'admin)
+                    </br> Dans l'onglet "my currencies" l'utilisateur peut accéder à ses crypto-monnaies favorites
+                    </br> Il y a aussi un outil recherche.
+                    </br> L'utilisateur peut aussi accéder aux détails d'une crypto-monnaie en appuyant dessus.
+                    
+                  </p>
+                  <img src="images/crypto/cryptos.gif" class="fullW">
+                  <h5 class="eng">Details :</h5>
+                  <h5 class="fr">Details :</h5>
+
+                  <img src="images/crypto/cryptodetails.PNG" class="fullW">
+                </div>
+
+                <h3 class="left20">Mobile</h3>
+                <div class="parag" data-aos="fade">
+
+                  <div class="pad10">
+                    <p class="eng">
+                      The application is fully <b>responsive</b> and adapts to
+                      device's screen.
+                    </p>
+                    <p class="fr">
+                      L'application est <b>responsive</b> et s'adapte à
+                      l'écran de l'utilisateur.
+                    </p>
+                    <img src="images/crypto/mobilecrypto.gif" class="fullW">
+                  </div>
+
+                </div>
+
+              </div>
+
+
+
+
+            </div>
+          </div>
+        </div>
+
+
+        <div class="footer">
+          <div class="container-fluid text-center">
+            <p>
+              Copyright
+              <script>document.write(new Date().getFullYear());</script> All rights reserved | Mimolol - Mohamed
+              Bouyakhlef
+            </p>
+          </div>
+        </div>
+
+
+
+
+
+      </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="/js/langagesetting.js"></script>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/jquery.countdown.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/bootstrap-datepicker.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/aos.js"></script>
+
+    <script src="js/picturefill.min.js"></script>
+    <script src="js/lightgallery-all.min.js"></script>
+    <script src="js/jquery.mousewheel.min.js"></script>
+
+    <script src="js/main.js"></script>
+
+  </div>
+  <script src="js/iframeset-jquery.js"></script>
+</body>
+
+</html>
