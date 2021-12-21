@@ -211,4 +211,7 @@ $(function () {
                 }
             }
     }
+
+    Cookies.set("inside", true, { expires: 1 });
+    showPage();
 })
